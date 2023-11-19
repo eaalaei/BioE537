@@ -1,32 +1,76 @@
 # Component Specification
 
-### Software Components
-**Probe Design Pipeline (via OligoMiner)**<br>
-Responsible for generation of probe sequences. Occurs in two primary phases: generation of iniital candidates based on thermodynamic properties followed by filtering of candidate probes based on specificity.
+## 1. Introduction
 
-This component takes as input a FASTA file specifying a sequence which the user wants to design probes against and returns as output the a set of probe sequences with associated metadata (melting temperature, specificity, etc.)
+This document outlines the major components and their specifications for a software application designed to simulate fluid flow inside tissue, determine the optimum suction velocity, and generate relevant plots using PyQt, DarcyTools, and Pyomo packages.
 
-*Note: This component utilizes OligoMiner, a set of scripts for designing DNA probes.*
+## 2. GUI Component
 
-**Visualization Suite**<br>
-The probe design pipeline will return a set of probes from which the user can select, each with different properties. This component will summarize these properties in a series of easy to interpret plots which the user can utilize to compare each probe and make a decision on which to use for their experiment.
+### 2.1 Functionality
 
-This component takes as input the set of probes returned by the probe design pipeline and the associated metadata and returns as output several visualizations such as duplex probability vs. temperature, quantification of specificity, etc.
+The GUI component is responsible for collecting user inputs required for the simulation. It includes fields for:
+- Size of the tissue (X and Y dimensions).
+- Minimum and maximum allowable shear stress (maximum is mandatory, and minimum defaults to 0 if not provided).
+- Permeability of the tissue.
+- Density and viscosity of the fluid.
 
-**User Interface**<br>
-To ensure accessibility, this component provides the user with a graphical interface which will allow for easy uploading of input files, tuning of parameters, and visual monitoring of the pipeline's status.
+### 2.2 Input
 
-This component does not have any inputs/outputs as it is essentially a GUI wrapper for the probe design pipeline.
+- Size of the tissue (X and Y dimensions).
+- Minimum and maximum allowable shear stress.
+- Permeability of the tissue.
+- Density and viscosity of the fluid.
 
-<br>
+### 2.3 Output
 
-### Interactions to Accomplish Use Case
-For a user wishing to design DNA probes from scratch, the probe design pipeline and visualization suite interact in series, with the outputs of the pipeline (the probe sequences + metadata) being fed into the visualization suite which in turn generates the relevant plots. The user interface acts as a wrapper for the other two components, running in parallel with the pipeline and housing the visualizations.
+None (GUI is an input component).
 
-<br>
+## 3. Simulation Component (DarcyTools)
 
-### Preliminary Plan
-1. Implement probe design pipeline using existing scripts from OligoMiner
-2. Decide which visualizations will be included in the final output
-3. Implement visualization suite using test outputs from probe design pipeline
-4. Wrap up everything nicely in a GUI using PyQT
+### 3.1 Functionality
+
+The simulation component utilizes the DarcyTools package to simulate fluid flow within the tissue based on the provided inputs. It calculates shear stress, pathlines, pressure distribution, and velocity distribution.
+
+### 3.2 Input
+
+- Size of the tissue (X and Y dimensions).
+- Minimum and maximum allowable shear stress.
+- Permeability of the tissue.
+- Density and viscosity of the fluid.
+
+### 3.3 Output
+
+- Shear stress data.
+- Pathline plots.
+- Pressure distribution plots.
+- Velocity distribution plots.
+
+## 4. Optimization Component (Pyomo)
+
+### 4.1 Functionality
+
+The optimization component, using the Pyomo package, determines the optimum suction velocity within the tissue.
+
+### 4.2 Input
+
+- Size of the tissue (X and Y dimensions).
+- Minimum and maximum allowable shear stress.
+- Permeability of the tissue.
+- Density and viscosity of the fluid.
+
+### 4.3 Output
+
+- Optimum suction velocity in m/s.
+
+## 5. Overall Output
+
+- Suction velocity in m/s.
+- Plots:
+  - Shear stress plots.
+  - Pathline contours.
+  - Pressure distribution contours.
+  - Velocity distribution contours.
+
+## 6. Conclusion
+
+This Component Specification provides a detailed overview of the major components, their functionalities, and the interactions necessary for simulating fluid flow within tissue. The outlined specifications serve as a guide for implementing and understanding the software architecture.
