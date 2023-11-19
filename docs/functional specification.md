@@ -9,10 +9,12 @@ Users seek information about the flow dynamics in microfluidic systems, tissue p
 ## Use Cases
 1. **Identifying Tissues Subjected to Flow:**
    - Users can input tissue characteristics to visualize the areas subjected to flow using the fluid dynamics simulation.
+   ![Tissue Subjected to Flow](image1.png)
 
 2. **Simulating Fluid Dynamics:**
    - Users can use the software to simulate fluid dynamics in a tissue trap.
    - The simulation includes arrows indicating flow magnitude and direction, and color-coded representation of the X velocity component.
+   ![Fluid Dynamics Simulation](image2.png)
 
 3. **Determining Acceptable Fluid Velocities:**
    - Users input tissue dimensions and characteristics, along with velocity limitations.
@@ -22,7 +24,7 @@ Users seek information about the flow dynamics in microfluidic systems, tissue p
 
 ### Next 2 Weeks
 1. **GUI Development:**
-   - Integrate the provided GUI schematic (gui.pdf) into the software.
+   - Integrate the provided GUI schematic (![GUI Schematic](gui.pdf)) into the software.
    - Develop the user interface for inputting tissue characteristics and velocity limitations.
 
 2. **Fluid Dynamics Simulation Module:**
@@ -44,5 +46,3 @@ Users seek information about the flow dynamics in microfluidic systems, tissue p
 ## Additional Notes
 - Users are encouraged to refer to Folch’s Lab Data for a better understanding of the experimental context.
 - The software aims to bridge the gap for scientists without expertise in computational fluid dynamics, providing a valuable tool for microfluidic system analysis.
-
-
