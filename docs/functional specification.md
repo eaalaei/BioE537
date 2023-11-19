@@ -9,12 +9,12 @@ Users seek information about the flow dynamics in microfluidic systems, tissue p
 ## Use Cases
 1. **Identifying Tissues Subjected to Flow:**
    - Users can input tissue characteristics to visualize the areas subjected to flow using the fluid dynamics simulation.
-   ![Tissue Subjected to Flow](image1.png)
+   <img src="image1.png" alt="Tissue Subjected to Flow" width="300">
 
 2. **Simulating Fluid Dynamics:**
    - Users can use the software to simulate fluid dynamics in a tissue trap.
    - The simulation includes arrows indicating flow magnitude and direction, and color-coded representation of the X velocity component.
-   ![Fluid Dynamics Simulation](image2.png)
+   <img src="image2.png" alt="Fluid Dynamics Simulation" width="300">
 
 3. **Determining Acceptable Fluid Velocities:**
    - Users input tissue dimensions and characteristics, along with velocity limitations.
@@ -26,7 +26,7 @@ Users seek information about the flow dynamics in microfluidic systems, tissue p
 1. **GUI Development:**
    - Integrate the provided GUI schematic into the software.
    - Develop the user interface for inputting tissue characteristics and velocity limitations.
-   ![GUI Schematic](gui.png)
+   <img src="gui.png" alt="GUI Schematic" width="300">
 
 2. **Fluid Dynamics Simulation Module:**
    - Implement the fluid dynamics simulation module based on the provided images (image1.png and image2.png).
@@ -38,7 +38,7 @@ Users seek information about the flow dynamics in microfluidic systems, tissue p
 
 4. **Code Workflow:**
    - Provide a clear workflow of the code for better understanding.
-   ![Code Workflow](workflow.png)
+   <img src="workflow.png" alt="Code Workflow" width="600">
 
 5. **Testing and Debugging:**
    - Conduct thorough testing of the GUI, simulation module, and velocity range calculation.
