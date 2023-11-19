@@ -26,7 +26,7 @@ Users seek information about the flow dynamics in microfluidic systems, tissue p
 1. **GUI Development:**
    - Integrate the provided GUI schematic into the software.
    - Develop the user interface for inputting tissue characteristics and velocity limitations.
-   ![GUI Schematic](gui.pdf)
+   ![GUI Schematic](gui.png)
 
 2. **Fluid Dynamics Simulation Module:**
    - Implement the fluid dynamics simulation module based on the provided images (image1.png and image2.png).
@@ -36,11 +36,15 @@ Users seek information about the flow dynamics in microfluidic systems, tissue p
    - Develop the algorithm to calculate the acceptable range of fluid velocities based on user inputs.
    - Implement a user-friendly output display for the calculated velocity range.
 
-4. **Testing and Debugging:**
+4. **Code Workflow:**
+   - Provide a clear workflow of the code for better understanding.
+   ![Code Workflow](workflow.png)
+
+5. **Testing and Debugging:**
    - Conduct thorough testing of the GUI, simulation module, and velocity range calculation.
    - Address any identified issues or bugs.
 
-5. **Documentation:**
+6. **Documentation:**
    - Prepare user documentation explaining how to use the software.
    - Document the underlying algorithms and calculations for transparency.
 
