@@ -22,7 +22,6 @@ Users seek information about the flow dynamics in microfluidic systems, tissue p
 
 ## Preliminary Project Plan
 
-### Next 2 Weeks
 1. **GUI Development:**
    - Integrate the provided GUI schematic into the software.
    - Develop the user interface for inputting tissue characteristics and velocity limitations.
