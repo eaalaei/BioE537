@@ -24,8 +24,9 @@ Users seek information about the flow dynamics in microfluidic systems, tissue p
 
 ### Next 2 Weeks
 1. **GUI Development:**
-   - Integrate the provided GUI schematic (![GUI Schematic](gui.pdf)) into the software.
+   - Integrate the provided GUI schematic into the software.
    - Develop the user interface for inputting tissue characteristics and velocity limitations.
+   ![GUI Schematic](gui.pdf)
 
 2. **Fluid Dynamics Simulation Module:**
    - Implement the fluid dynamics simulation module based on the provided images (image1.png and image2.png).
