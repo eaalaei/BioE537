@@ -1,11 +1,13 @@
 ## Porous Media Fluid Flow
 This software is going to simulate fluid flow inside tissue, using the pressure distribution we would be able to calculate the shear stress. 
 We use finite difference method to solve the related PDE and GUI to interact with user and showing the pressure distribution.
+## Porous Media Fluid Flow
+
 ### Darcy's Law for Pressure Distribution
 
 The Darcy pressure distribution in porous media is described by Darcy's law:
 
-\[ Q = -k A \frac{\Delta P}{\mu L} \]
+![Darcy's Law](https://latex.codecogs.com/svg.latex?Q%20=%20-kAL\frac{\Delta%20P}{\mu})
 
 Where:
 - \( Q \) is the volumetric flow rate,
@@ -19,7 +21,7 @@ Where:
 
 The Poisson equation for pressure in porous media is expressed as:
 
-\[ \nabla \cdot \left( -k \nabla P \right) = \frac{\rho}{\mu} \frac{dQ}{dt} \]
+![Poisson Equation](https://latex.codecogs.com/svg.latex?\nabla%20\cdot%20\left(-k\nabla%20P\right)%20=%20\frac{\rho}{\mu}\frac{dQ}{dt})
 
 Where:
 - \( P \) is the pressure,
@@ -33,7 +35,7 @@ Where:
 
 The shear stress (\( \tau \)) in porous media can be calculated using Darcy's law:
 
-\[ \tau = -k \frac{\Delta P}{L} \]
+![Shear Stress](https://latex.codecogs.com/svg.latex?\tau%20=%20-k\frac{\Delta%20P}{L})
 
 Where:
 - \( \tau \) is the shear stress,
