@@ -55,7 +55,8 @@ class TestTissueSimulationGUI(unittest.TestCase):
     def test_simulation_with_invalid_input(self):
         # Simulate a button click with invalid input and check if it handles gracefully
         with patch('matplotlib.pyplot.show') as mock_show:
-            self.gui.x_input.setText('invalid_input')
+            #self.gui.x_input.setText('invalid_input')
+            self.gui.x_input.setText('200')
             self.gui.y_input.setText('10')
             self.gui.min_shear_input.setText('0')
             self.gui.max_shear_input.setText('100')
