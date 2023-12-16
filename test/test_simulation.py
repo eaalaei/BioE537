@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QApplication, QLineEdit, QPushButton
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
 from unittest.mock import patch
-from code.Simulation.py import TissueSimulationGUI
+from Code.Simulation import TissueSimulationGUI
 
 class TestTissueSimulationGUI(unittest.TestCase):
     def setUp(self):
