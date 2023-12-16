@@ -5,7 +5,7 @@ from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
 from unittest.mock import patch
 print('Original sys.path:', sys.path)
-#sys.path.append('/path/to/directory')
+sys.path.append('/Users/runner/work/BioE537/BioE537/')
 from Code.Simulation import TissueSimulationGUI
 
 class TestTissueSimulationGUI(unittest.TestCase):
