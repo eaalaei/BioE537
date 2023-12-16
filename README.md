@@ -1,5 +1,3 @@
-# BioE537
-
 ## Porous Media Fluid Flow
 This software is going to simulate fluid flow inside tissue, using the pressure distribution we would be able to calculate the shear stress. 
 We use finite difference method to solve the related PDE and GUI to interact with user and showing the pressure distribution.
