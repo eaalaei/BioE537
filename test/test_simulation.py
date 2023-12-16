@@ -16,6 +16,7 @@ class TestTissueSimulationGUI(unittest.TestCase):
         del self.gui
         del self.app
 
+    
     def test_initialization(self):
         # Check if the GUI is initialized properly
         self.assertIsInstance(self.gui, TissueSimulationGUI)
