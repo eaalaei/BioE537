@@ -100,8 +100,8 @@ class TissueSimulationGUI(QWidget):
 
     def start_simulation(self):
         # Retrieve user inputs
-        x_dimension = float(self.x_input.text())
         print(self.x_input.text())
+        x_dimension = float(self.x_input.text())
         y_dimension = float(self.y_input.text())
         min_shear_stress = float(self.min_shear_input.text() if self.min_shear_input.text() else 0)
         max_shear_stress = float(self.max_shear_input.text())
